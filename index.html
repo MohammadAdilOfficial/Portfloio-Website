@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Sidebar with Dynamic Theme</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <img src="logo.png" alt="">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-link active" data-target="home-section"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#" class="nav-link" data-target="about-section"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#" class="nav-link" data-target="services-section"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="#" class="nav-link" data-target="portfolio-section"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+        <li><a href="#" class="nav-link" data-target="contact-section"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Home Section -->
+    <section id="home-section" class="content-section">
+      <!-- <div class="profile-img">
+        <img src="https://via.placeholder.com/250" alt="Profile Image of Mohammad Adil">
+      </div> -->
+      <div class="hero">
+        <h1>Hello, I’m <span class="highlight">Mohammad Adil</span></h1>
+        <h2>Creative <span class="highlight">Web Designer & Developer</span></h2>
+        <p>
+          I’m a passionate web designer and developer with over 3 years of experience. 
+          I specialize in designing stunning websites, crafting custom WordPress themes, 
+          and building dynamic React applications that deliver seamless user experiences. 
+          My expertise spans across web development, graphic design, and front-end technologies.
+        </p>
+        <button class="cta-btn" onclick="scrollToSection('about-section')">More About Me</button>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank" class="fab fa-github social-icon github"></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" class="fab fa-linkedin social-icon linkedin"></a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section" class="content-section" style="display:none;">
+        <div class="hero">
+          <h1>About <span class="highlight">Me</span></h1>
+          <p>
+            I am a passionate web designer and developer with over 5 years of experience in crafting modern, responsive websites and web applications. 
+            I thrive on creativity, problem-solving, and delivering user-centered solutions. Here are some key details about my background and skills.
+          </p>
+          
+          <!-- Experience and Skills Section -->
+          <div class="about-content">
+            <div class="about-left">
+              <h2>Who I Am</h2>
+              <p>
+                With a solid foundation in both design and development, I bridge the gap between aesthetics and functionality. 
+                I’m proficient in WordPress, PHP, React.js, and various design tools like Figma and Adobe XD. I constantly strive to 
+                learn new technologies and apply them in innovative ways to solve real-world challenges.
+              </p>
+              <h3>Key Skills:</h3>
+              <ul>
+                <li>Web Design & UX/UI Development</li>
+                <li>Front-end Development (React.js, HTML, CSS, JavaScript)</li>
+                <li>WordPress Theme Customization</li>
+                <li>Responsive & Mobile-First Design</li>
+                <li>Graphic Design (Figma, Adobe XD, Photoshop)</li>
+              </ul>
+              <!-- <a href="resume.pdf" class="cta-btn">Download My Resume</a> -->
+            </div>
+      
+            <!-- Animated Skill Progress Bars -->
+            <div class="about-right">
+              <h2>My Skills</h2>
+              <div class="skill">
+                <h4>HTML/CSS</h4>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <h4>JavaScript</h4>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <h4>WordPress</h4>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <h4>React.js</h4>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 75%;"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <h4>Graphic Design</h4>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 70%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Statistics Section -->
+          <div class="stats">
+            <div class="stat">
+              <h3>5</h3>
+              <p>Completed Projects</p>
+            </div>
+            <div class="stat">
+              <h3>3</h3>
+              <p>Years of Experience</p>
+            </div>
+            <div class="stat">
+              <h3>3</h3>
+              <p>Satisfied Clients</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Services Section -->
+    <section id="services-section" class="content-section" style="display:none;">
+        <div class="hero">
+          <h1>My <span class="highlight">Services</span></h1>
+          <p>Discover the wide range of services I offer to bring your ideas to life.</p>
+          <div class="services-grid">
+            <div class="service-card">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Web Design</h3>
+              <p>
+                Custom websites that are both visually stunning and highly functional, with responsive designs that engage users on any device.
+              </p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-paint-brush"></i>
+              <h3>Graphic Design</h3>
+              <p>
+                Eye-catching graphic design solutions for branding, marketing materials, and online platforms to elevate your business identity.
+              </p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-bullhorn"></i>
+              <h3>Branding & Strategy</h3>
+              <p>
+                Comprehensive branding strategies and creative direction that align with your business goals to create a memorable brand presence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Portfolio Section -->
+    <section id="portfolio-section" class="content-section" style="display:none;">
+        <div class="hero">
+          <h1>My <span class="highlight">Portfolio</span></h1>
+          <p>Explore some of my latest projects showcasing my expertise in web and graphic design.</p>
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <img src="computer-4795762_1280.jpg" alt="Creative Website Design" class="portfolio-image">
+              <div class="portfolio-overlay">
+                <h3>Creative Website Design</h3>
+                <p>A modern and responsive website design for a tech company.</p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img src="development-4536630_1280.png" alt="Branding & Identity" class="portfolio-image">
+              <div class="portfolio-overlay">
+                <h3>Branding & Identity</h3>
+                <p>A complete rebranding package for a retail business.</p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img src="email-4284157_1280.png" alt="Graphic Design Campaign" class="portfolio-image">
+              <div class="portfolio-overlay">
+                <h3>Graphic Design Campaign</h3>
+                <p>An eye-catching graphic design campaign for a marketing launch.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="content-section" style="display:none;">
+        <div class="hero">
+          <h1>Contact <span class="highlight">Me</span></h1>
+          <p>Reach out to me for any collaboration or inquiries about my services.</p>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Your Phone Number">
+            <textarea placeholder="Your Message" rows="6" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+      
+    
+      
+
+    <!-- Theme Color Picker -->
+    <div class="theme-switcher">
+      <p>Theme Colors</p>
+      <div class="color-options">
+        <div class="color" data-color="#ffa500"></div>
+        <div class="color" data-color="#007bff"></div>
+        <div class="color" data-color="#28a745"></div>
+        <div class="color" data-color="#6f42c1"></div>
+        <div class="color" data-color="#dc3545"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
